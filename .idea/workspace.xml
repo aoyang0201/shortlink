@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eeddfda-d5f8-4a03-ab18-d796117f899a" name="Changes" comment="feature: 开发短链接后管系统通用持久层注册相关功能">
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/common/constant/RedisCacheConstant.java" afterDir="false" />
+    <list default="true" id="8eeddfda-d5f8-4a03-ab18-d796117f899a" name="Changes" comment="feature: 开发分布式锁">
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dto/req/UserLoginReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dto/req/UserUpdateReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dto/resp/UserLoginRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/resources/shardingsphere-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/test/java/com/nageoffer/shortlink/admin/test/UserTableShardingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +50,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.UserTableShardingTest.executor": "Debug",
     "Maven.shortlink-all [package].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -49,11 +58,11 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.ShortLinkAdminApplication.executor": "Run",
+    "Spring Boot.ShortLinkAdminApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/code/Java/shortlink_over",
+    "last_opened_file_path": "E:/code/Java/hm-dianping",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,17 +75,35 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\Java\shortlink\admin\src\test\java" />
       <recent name="E:\code\Java\shortlink\gateway\src\main\resources" />
       <recent name="E:\code\Java\shortlink\project\src\main\resources" />
       <recent name="E:\code\Java\shortlink\gateway\src\main\java\com\nageoffer\shortlink\gateway" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nageoffer.shortlink.admin.dto.req" />
       <recent name="com.nageoffer.shortlink.admin.dto.resp" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ShortLinkAdminApplication">
+    <configuration name="UserTableShardingTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nageoffer.shortlink.admin.test.UserTableShardingTest" />
+      <module name="shortlink-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nageoffer.shortlink.admin.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="shortlink" />
       <method v="2">
@@ -116,6 +143,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ShortLinkAdminApplication" />
+        <item itemvalue="Application.UserTableShardingTest" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +164,7 @@
       <updated>1703250609973</updated>
       <workItem from="1703250611471" duration="1464000" />
       <workItem from="1703387786849" duration="47000" />
-      <workItem from="1703995749181" duration="41921000" />
+      <workItem from="1703995749181" duration="56957000" />
     </task>
     <task id="LOCAL-00001" summary="完成业务全局异常码设计">
       <option name="closed" value="true" />
@@ -162,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704200238039</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feature: 开发分布式锁">
+      <option name="closed" value="true" />
+      <created>1704201714698</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704201714698</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,7 +219,8 @@
     <MESSAGE value="完成业务全局异常码设计" />
     <MESSAGE value="feature: 开发短链接后管系统查询用户脱敏信息脱敏功能" />
     <MESSAGE value="feature: 开发短链接后管系统通用持久层注册相关功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: 开发短链接后管系统通用持久层注册相关功能" />
+    <MESSAGE value="feature: 开发分布式锁" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: 开发分布式锁" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

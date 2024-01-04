@@ -4,24 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eeddfda-d5f8-4a03-ab18-d796117f899a" name="Changes" comment="feature: 用户模块完结">
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/common/biz/user/UserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/common/biz/user/UserInfoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/common/biz/user/UserTransmitFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/common/database/BaseDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/config/UserConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/controller/GroupController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dao/entity/GroupDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dao/mapper/GroupMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dto/req/ShortLinkGroupSaveReqDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dto/resp/ShortLinkGroupRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/GroupService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/impl/GroupServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/toolkit/RandomGenerator.java" afterDir="false" />
+    <list default="true" id="8eeddfda-d5f8-4a03-ab18-d796117f899a" name="Changes" comment="feature: 封装用户上下文">
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dto/req/ShortLinkGroupSortReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dto/req/ShortLinkGroupUpdateReqDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/common/enums/UserErrorCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/common/enums/UserErrorCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dao/entity/UserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dao/entity/UserDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/common/biz/user/UserTransmitFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/common/biz/user/UserTransmitFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/controller/GroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/controller/GroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dto/req/ShortLinkGroupSaveReqDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dto/req/ShortLinkGroupSaveReqDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dto/resp/ShortLinkGroupRespDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/dto/resp/ShortLinkGroupRespDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/GroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/GroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/impl/GroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/impl/GroupServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.UserTableShardingTest.executor": "Debug",
+    "Maven.shortlink-all [clean].executor": "Run",
     "Maven.shortlink-all [package].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -68,7 +61,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/code/Java/hm-dianping",
+    "last_opened_file_path": "E:/code/Java/algorithm-journey",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,10 +86,10 @@
       <recent name="E:\code\Java\shortlink\gateway\src\main\java\com\nageoffer\shortlink\gateway" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nageoffer.shortlink.admin.dto.req" />
       <recent name="com.nageoffer.shortlink.admin.config" />
       <recent name="com.nageoffer.shortlink.admin.common.biz.user" />
       <recent name="com.nageoffer.shortlink.admin.dto.resp" />
-      <recent name="com.nageoffer.shortlink.admin.dto.req" />
       <recent name="com.nageoffer.shortlink.admin.toolkit" />
     </key>
   </component>
@@ -174,7 +167,7 @@
       <updated>1703250609973</updated>
       <workItem from="1703250611471" duration="1464000" />
       <workItem from="1703387786849" duration="47000" />
-      <workItem from="1703995749181" duration="67828000" />
+      <workItem from="1703995749181" duration="80895000" />
     </task>
     <task id="LOCAL-00001" summary="完成业务全局异常码设计">
       <option name="closed" value="true" />
@@ -216,7 +209,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704270060965</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feature: 封装用户上下文">
+      <option name="closed" value="true" />
+      <created>1704284907101</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704284907101</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feature: 封装用户上下文">
+      <option name="closed" value="true" />
+      <created>1704284969114</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704284969114</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +248,7 @@
     <MESSAGE value="feature: 开发短链接后管系统通用持久层注册相关功能" />
     <MESSAGE value="feature: 开发分布式锁" />
     <MESSAGE value="feature: 用户模块完结" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: 用户模块完结" />
+    <MESSAGE value="feature: 封装用户上下文" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: 封装用户上下文" />
   </component>
 </project>

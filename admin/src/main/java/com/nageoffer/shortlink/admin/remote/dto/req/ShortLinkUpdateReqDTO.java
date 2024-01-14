@@ -12,6 +12,10 @@ import java.util.Date;
 public class ShortLinkUpdateReqDTO {
 
     /**
+     * 原始分组标识
+     */
+    private String originGid;
+    /**
      * 原始链接
      */
     private String originUrl;

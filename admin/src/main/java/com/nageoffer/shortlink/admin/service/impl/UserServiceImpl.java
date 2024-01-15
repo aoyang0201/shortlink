@@ -1,6 +1,7 @@
 package com.nageoffer.shortlink.admin.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.UUID;
 import com.alibaba.fastjson2.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -8,6 +9,7 @@ import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.nageoffer.shortlink.admin.common.convention.exception.ClientException;
+import com.nageoffer.shortlink.admin.common.convention.exception.ServiceException;
 import com.nageoffer.shortlink.admin.common.enums.UserErrorCodeEnum;
 import com.nageoffer.shortlink.admin.dao.entity.UserDO;
 import com.nageoffer.shortlink.admin.dao.mapper.UserMapper;
@@ -28,6 +30,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.sql.Wrapper;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import static com.nageoffer.shortlink.admin.common.constant.RedisCacheConstant.LOCK_USER_REGISTER_KEY;
@@ -50,7 +53,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserDO> implements 
                 .eq(UserDO::getUsername, username);
         UserDO userDO = baseMapper.selectOne(getUserByUsername);
         if (userDO == null) {
-            throw new ClientException(UserErrorCodeEnum.USER_NULL);
+            throw new ServiceException(UserErrorCodeEnum.USER_NULL);
         }
         UserRespDTO result = new UserRespDTO();
         BeanUtils.copyProperties(userDO, result);
@@ -109,10 +112,24 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserDO> implements 
         if (userDO == null){
             throw new ClientException("用户不存在");
         }
-
+        Map<Object ,Object> hasLoginMap = stringRedisTemplate.opsForHash().entries("login_" + requestParam.getUsername());
+        if (CollUtil.isNotEmpty(hasLoginMap)) {
+            String token = hasLoginMap.keySet().stream()
+                    .findFirst()
+                    .map(Object::toString)
+                    .orElseThrow(() -> new ClientException("用户登录错误"));
+            return new UserLoginRespDTO(token);
+        }
+        /**
+         * Hash
+         * Key：login_用户名
+         * Value：
+         *  Key：token标识
+         *  Val：JSON 字符串（用户信息）
+         */
         String uuid = UUID.randomUUID().toString();
         stringRedisTemplate.opsForHash().put("login_" + requestParam.getUsername(), uuid, JSON.toJSONString(userDO));
-        stringRedisTemplate.expire("login_" + requestParam.getUsername(), 30L, TimeUnit.DAYS);
+        stringRedisTemplate.expire("login_" + requestParam.getUsername(), 30L, TimeUnit.MINUTES);
         return new UserLoginRespDTO(uuid);
     }
 

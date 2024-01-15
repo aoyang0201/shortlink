@@ -1,5 +1,6 @@
 package com.nageoffer.shortlink.project.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.nageoffer.shortlink.project.common.convention.result.Result;
 import com.nageoffer.shortlink.project.common.convention.result.Results;
@@ -12,6 +13,7 @@ import com.nageoffer.shortlink.project.dto.resp.ShortLinkCreateRespDTO;
 
 import com.nageoffer.shortlink.project.dto.resp.ShortLinkGroupCountQueryRespDTO;
 import com.nageoffer.shortlink.project.dto.resp.ShortLinkPageRespDTO;
+import com.nageoffer.shortlink.project.handler.CustomBlockHandler;
 import com.nageoffer.shortlink.project.service.ShortLinkService;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
@@ -39,6 +41,11 @@ public class ShortLinkController {
     /**
      * 创建短链接
      */
+    @SentinelResource(
+            value = "create_short-link",
+            blockHandler = "createShortLinkBlockHandlerMethod",
+            blockHandlerClass = CustomBlockHandler.class
+    )
     @PostMapping("/api/short-link/v1/create")
     public Result<ShortLinkCreateRespDTO> createShortLink(@RequestBody ShortLinkCreateReqDTO requestParam) {
         return Results.success(shortLinkService.createShortLink(requestParam));

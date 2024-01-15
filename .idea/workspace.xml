@@ -4,88 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eeddfda-d5f8-4a03-ab18-d796117f899a" name="Changes" comment="feature: 完成短链接访问">
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/controller/ShortLinkStatsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/req/ShortLinkBatchCreateReqDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/req/ShortLinkGroupStatsAccessRecordReqDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/req/ShortLinkGroupStatsReqDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/req/ShortLinkStatsAccessRecordReqDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/req/ShortLinkStatsReqDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/resp/ShortLinkBaseInfoRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/resp/ShortLinkBatchCreateRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/resp/ShortLinkStatsAccessDailyRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/resp/ShortLinkStatsAccessRecordRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/resp/ShortLinkStatsBrowserRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/resp/ShortLinkStatsDeviceRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/resp/ShortLinkStatsLocaleCNRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/resp/ShortLinkStatsNetworkRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/resp/ShortLinkStatsOsRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/resp/ShortLinkStatsRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/resp/ShortLinkStatsTopIpRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/resp/ShortLinkStatsUvRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/toolkit/EasyExcelWebUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/controller/ShortLinkStatsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/entity/LinkStatsTodayDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkStatsTodayMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/biz/ShortLinkStatsRecordDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/req/ShortLinkBatchCreateReqDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/req/ShortLinkGroupStatsAccessRecordReqDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/req/ShortLinkStatsAccessRecordReqDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/req/ShortLinkStatsReqDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkBaseInfoRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkBatchCreateRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkGroupStatsReqDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkStatsAccessDailyRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkStatsAccessRecordRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkStatsBrowserRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkStatsDeviceRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkStatsLocaleCNRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkStatsNetworkRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkStatsOsRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkStatsRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkStatsTopIpRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkStatsUvRespDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/mq/consumer/DelayShortLinkStatsConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/mq/consumer/ShortLinkStatsSaveConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/mq/producer/DelayShortLinkStatsProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/mq/producer/ShortLinkStatsSaveProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/service/LinkStatsTodayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/service/ShortLinkStatsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/service/impl/LinkStatsTodayServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/service/impl/ShortLinkStatsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/resources/mapper/LinkMapper.xml" afterDir="false" />
+    <list default="true" id="8eeddfda-d5f8-4a03-ab18-d796117f899a" name="Changes" comment="feature: 完成短链接分组记录变更">
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/common/biz/user/UserFlowRiskControlFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/config/UserFlowRiskControlConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/resources/lua/user_flow_risk_control.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/config/GotoDomainWhiteListConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/config/SentinelRuleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/handler/CustomBlockHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/controller/ShortLinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/controller/ShortLinkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/ShortLinkRemoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/ShortLinkRemoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/req/ShortLinkPageReqDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/req/ShortLinkPageReqDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/req/ShortLinkUpdateReqDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/req/ShortLinkUpdateReqDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/resp/ShortLinkPageRespDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/remote/dto/resp/ShortLinkPageRespDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/test/java/com/nageoffer/shortlink/admin/test/UserTableShardingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/test/java/com/nageoffer/shortlink/admin/test/UserTableShardingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/common/constant/RedisKeyConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/common/constant/RedisKeyConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/common/biz/user/UserTransmitFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/common/biz/user/UserTransmitFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/common/convention/errorcode/BaseErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/common/convention/errorcode/BaseErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/config/UserConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/config/UserConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/impl/GroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/impl/GroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/nageoffer/shortlink/admin/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/controller/ShortLinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/controller/ShortLinkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/entity/LinkAccessLogsDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/entity/LinkAccessLogsDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/entity/LinkDeviceStatsDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/entity/LinkDeviceStatsDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/entity/ShortLinkDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/entity/ShortLinkDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkAccessLogsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkAccessLogsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkAccessStatsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkAccessStatsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkBrowserStatsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkBrowserStatsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkDeviceStatsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkDeviceStatsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkLocaleStatsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkLocaleStatsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkNetworkStatsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkNetworkStatsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkOsStatsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/LinkOsStatsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/ShortLinkMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dao/mapper/ShortLinkMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/req/ShortLinkCreateReqDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/req/ShortLinkCreateReqDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/req/ShortLinkPageReqDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/req/ShortLinkPageReqDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/req/ShortLinkUpdateReqDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/req/ShortLinkUpdateReqDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkPageRespDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/dto/resp/ShortLinkPageRespDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/service/ShortLinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/service/ShortLinkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/service/impl/RecycleBinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/service/impl/RecycleBinServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/service/impl/ShortLinkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/service/impl/ShortLinkServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/toolkit/LinkUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/nageoffer/shortlink/project/toolkit/LinkUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/resources/shardingsphere-config-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/resources/shardingsphere-config-dev.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/resources/shardingsphere-config-prod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/resources/shardingsphere-config-prod.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,10 +96,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\code\Java\shortlink\project\src\main\java\com\nageoffer\shortlink\project" />
+      <recent name="E:\code\Java\shortlink\admin\src\main\resources" />
       <recent name="E:\code\Java\shortlink\project\src\main\java\com\nageoffer\shortlink\project\dto" />
       <recent name="E:\code\Java\shortlink\admin\src\main\java\com\nageoffer\shortlink\admin\remote\dto\resp" />
       <recent name="E:\code\Java\shortlink\project\src\main\resources" />
-      <recent name="E:\code\Java\shortlink\admin\src\main\java\com\nageoffer\shortlink\admin\remote\dto" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.nageoffer.shortlink.admin.remote.dto.resp" />
@@ -247,7 +184,7 @@
       <workItem from="1704545915264" duration="30609000" />
       <workItem from="1704777666919" duration="1350000" />
       <workItem from="1704782705893" duration="92000" />
-      <workItem from="1704782987181" duration="57771000" />
+      <workItem from="1704782987181" duration="69402000" />
     </task>
     <task id="LOCAL-00001" summary="完成业务全局异常码设计">
       <option name="closed" value="true" />
@@ -345,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704894454342</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feature: 完成短链接分组记录变更">
+      <option name="closed" value="true" />
+      <created>1705218635995</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1705218635995</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,6 +350,7 @@
     <MESSAGE value="feature: 直到短链接回收站开发完结" />
     <MESSAGE value="feature: 完成pv uv uip" />
     <MESSAGE value="feature: 完成短链接访问" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: 完成短链接访问" />
+    <MESSAGE value="feature: 完成短链接分组记录变更" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: 完成短链接分组记录变更" />
   </component>
 </project>

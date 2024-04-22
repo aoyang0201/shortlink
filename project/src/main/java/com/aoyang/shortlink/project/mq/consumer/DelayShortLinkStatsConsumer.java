@@ -22,6 +22,7 @@ import static com.aoyang.shortlink.project.common.constant.RedisKeyConstant.DELA
  */
 @Slf4j
 @Component
+@Deprecated
 @RequiredArgsConstructor
 public class DelayShortLinkStatsConsumer implements InitializingBean {
 
@@ -69,6 +70,6 @@ public class DelayShortLinkStatsConsumer implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        onMessage();
+//        onMessage();
     }
 }

@@ -82,6 +82,8 @@ public class ShortLinkStatsSaveConsumer implements StreamListener<String, MapRec
             // 某某某情况宕机了
             messageQueueIdempotentHandler.delMessageProcessed(id.toString());
             log.error("记录短链接监控消费异常", ex);
+            //这里抛出异常后就不会执行后面将key设置成1的代码
+            throw ex;
         }
         messageQueueIdempotentHandler.setAccomplish(id.toString());
     }

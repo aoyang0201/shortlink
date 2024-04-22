@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eeddfda-d5f8-4a03-ab18-d796117f899a" name="Changes" comment="fix:修复用户请求限流后没有终止流程">
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/aoyang/shortlink/admin/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/aoyang/shortlink/admin/service/impl/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="8eeddfda-d5f8-4a03-ab18-d796117f899a" name="Changes" comment="optimzie：删除延迟队列功能&amp;修改同步获取读写锁">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/aoyang/shortlink/project/mq/consumer/ShortLinkStatsSaveConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/aoyang/shortlink/project/mq/consumer/ShortLinkStatsSaveConsumer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +219,7 @@
       <workItem from="1713613986994" duration="4078000" />
       <workItem from="1713684401777" duration="79000" />
       <workItem from="1713689176834" duration="27000" />
-      <workItem from="1713704994255" duration="1564000" />
+      <workItem from="1713704994255" duration="4022000" />
     </task>
     <task id="LOCAL-00001" summary="完成业务全局异常码设计">
       <option name="closed" value="true" />
@@ -380,7 +381,31 @@
       <option name="project" value="LOCAL" />
       <updated>1713789407212</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fix:用户注册锁冲突时返回异常信息错误">
+      <option name="closed" value="true" />
+      <created>1713789532450</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1713789532450</updated>
+    </task>
+    <task id="LOCAL-00022" summary="optimzie：修改用户信息时验证当前用户名是否为登陆用户">
+      <option name="closed" value="true" />
+      <created>1713789633220</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1713789633220</updated>
+    </task>
+    <task id="LOCAL-00023" summary="optimzie：删除延迟队列功能&amp;修改同步获取读写锁">
+      <option name="closed" value="true" />
+      <created>1713790324143</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1713790324143</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,6 +474,9 @@
     <MESSAGE value="fix:修复聚合服务远程部署服务器失败问题、修改布隆过滤器名称" />
     <MESSAGE value="fix:修改名称nageoffer-&gt;aoyang&#10;optimize:优化极端情况下布隆过滤器数据丢失情况" />
     <MESSAGE value="fix:修复用户请求限流后没有终止流程" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:修复用户请求限流后没有终止流程" />
+    <MESSAGE value="fix:用户注册锁冲突时返回异常信息错误" />
+    <MESSAGE value="optimzie：修改用户信息时验证当前用户名是否为登陆用户" />
+    <MESSAGE value="optimzie：删除延迟队列功能&amp;修改同步获取读写锁" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimzie：删除延迟队列功能&amp;修改同步获取读写锁" />
   </component>
 </project>

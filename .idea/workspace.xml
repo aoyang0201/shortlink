@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eeddfda-d5f8-4a03-ab18-d796117f899a" name="Changes" comment="fix:修改名称nageoffer-&gt;aoyang&#10;optimize:优化极端情况下布隆过滤器数据丢失情况">
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/aoyang/shortlink/project/service/impl/ShortLinkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/aoyang/shortlink/project/service/impl/ShortLinkServiceImpl.java" afterDir="false" />
+    <list default="true" id="8eeddfda-d5f8-4a03-ab18-d796117f899a" name="Changes" comment="fix:修复用户请求限流后没有终止流程">
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/aoyang/shortlink/admin/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/aoyang/shortlink/admin/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +218,7 @@
       <workItem from="1713613986994" duration="4078000" />
       <workItem from="1713684401777" duration="79000" />
       <workItem from="1713689176834" duration="27000" />
-      <workItem from="1713704994255" duration="1167000" />
+      <workItem from="1713704994255" duration="1564000" />
     </task>
     <task id="LOCAL-00001" summary="完成业务全局异常码设计">
       <option name="closed" value="true" />
@@ -372,7 +372,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713789070831</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fix:修复用户请求限流后没有终止流程">
+      <option name="closed" value="true" />
+      <created>1713789407212</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1713789407212</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,6 +448,7 @@
     <MESSAGE value="feature: 添加前端" />
     <MESSAGE value="fix:修复聚合服务远程部署服务器失败问题、修改布隆过滤器名称" />
     <MESSAGE value="fix:修改名称nageoffer-&gt;aoyang&#10;optimize:优化极端情况下布隆过滤器数据丢失情况" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:修改名称nageoffer-&gt;aoyang&#10;optimize:优化极端情况下布隆过滤器数据丢失情况" />
+    <MESSAGE value="fix:修复用户请求限流后没有终止流程" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:修复用户请求限流后没有终止流程" />
   </component>
 </project>
